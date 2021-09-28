@@ -546,7 +546,7 @@ img{
 }
 .contact-section__col{
   padding: 12px;
-  max-width: 480px;
+  max-width: 330px;
   font-size: 18px;
 }
 .contact-section__col-title{
@@ -719,6 +719,9 @@ img{
   }
   .analysis-graph__legend {
     margin-right: 60px;
+  }
+  .contact-section__col{
+    max-width: 480px;
   }
 }
 @media only screen and (min-width: 768px) {
