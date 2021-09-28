@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Landing page"/>
+	<title>Ailleron</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="./css/slick.css" type="text/css" rel="stylesheet">
+	<link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+	<header id="page-header" class="page-header">
+		<div class="page-header__container">
+
+			<div class="page-header__logo">
+				<a href="#" class="page-header__logo-link">
+					<img src="./img/logo.svg" alt="Logo strony" class="page-header__logo-image">
+				</a>
+			</div>
+
+			<button id="toggle-menu" class="page-header__toggle-menu">
+				<span></span>
+			</button>
+
+			<div id="menu" class="main-navigation">
+				<nav class="main-navigation__nav">
+					<ul class="main-navigation__list">
+						<li class="main-navigation__list-item ">
+							<a href="#" data-href="#intro" class="main-navigation__list-link main-navigation__list-link--active">Intro</a>
+						</li>
+						<li class="main-navigation__list-item ">
+							<a href="#" data-href="#wyniki-firmy" class="main-navigation__list-link">Wyniki firmy</a>
+						</li>
+						<li class="main-navigation__list-item ">
+							<a href="#" data-href="#kontakt" class="main-navigation__list-link">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+
+		</div>
+	</header>
+
+			<section id="intro" class="intro-section">
+				<div class="intro-section__slider">
+
+					<div class="intro-section__slider-item">
+						<img src="./img/foto1.jpg" alt="Slajd 1">
+						<div class="intro-section__slider-caption">
+							<div class="intro-section__slider-filter"></div>
+							<div class="intro-section__slider-caption-container">
+								<h1 class="intro-section__slider-title">Znaczący tekst opisujący stronę</h1>
+								<button type="button" class="intro-section__slider-button hvr-bounce-in"  data-href="#wyniki-firmy">Zobacz</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="intro-section__slider-item">
+						<img src="./img/foto2.jpg" alt="Slajd 2">
+						<div class="intro-section__slider-caption">
+							<div class="intro-section__slider-filter"></div>
+							<div class="intro-section__slider-caption-container">
+								<p class="intro-section__slider-title">Zobacz nasze wypasione raporty</p>
+								<button type="button" class="intro-section__slider-button" data-href="#wyniki-firmy">Zobacz</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="intro-section__slider-item">
+						<img src="./img/foto3.jpg" alt="Slajd 3">
+						<div class="intro-section__slider-caption">
+							<div class="intro-section__slider-filter"></div>
+							<div class="intro-section__slider-caption-container">
+								<p class="intro-section__slider-title">Zamów darmową wycenę</p>
+								<button type="button" class="intro-section__slider-button" data-href="#kontakt">Zobacz</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<main class="main-content">
+				<div class="main-content__container">
+					<section id="wyniki-firmy" class="main-content__section analysis-section">
+						<header class="main-content__section-header analysis-section__header">
+							<h2 class="main-content__section-title analysis-section__title">Wyniki firmy</h2>
+						</header>
+
+						<!-- Nawigacja tabów -->
+						<ul id="analysis-tabs" class="analysis-tabs">
+							<li class="analysis-tabs__item">
+								<button id="tab1" type="button" class="analysis-tabs__button hvr-shadow-radial">
+									<img src="./img/tab-icon.svg" alt="">
+									<span class="analysis-tabs-title">Raporty główne</span>
+								</button>
+							</li>
+							<li class="analysis-tabs__item">
+								<button id="tab2" type="button" class="analysis-tabs__button hvr-shadow-radial">
+									<img src="./img/tab-icon.svg" alt="">
+									<span class="analysis-tabs-title">Tabela</span>
+								</button>
+							</li>
+							<li class="analysis-tabs__item">
+								<button id="tab3" type="button" class="analysis-tabs__button hvr-shadow-radial">
+									<img src="./img/tab-icon.svg" alt="">
+									<span class="analysis-tabs-title">Wykres</span>
+								</button>
+							</li>
+						</ul> <!-- Koniec nawigacji tabów -->
+
+						<!-- Zawartość tabów -->
+						<div id="analysis-content" class="analysis-content">
+
+							<!-- Zakładka raporty -->
+							<div id="tab1-content" class="analysis-content__item analysis-content__item--raports">
+								<h3 class="analysis-content__item-title">Raporty główne</h3>
+								<div class="analysis-content__container raports-list">
+									<div class="raports-list__item">
+										<img src="./img/pdf-icon.svg" alt="">
+										<h4 class="raports-list__item-title">Raport_zadanie<br>testowe_1</h4>
+										<p class="raports-list__item-text">Przykładowy tekst pod <br>
+											headlinem w sekcji rapory</p>
+											<span class="report-list__item-label">Lorem ipsum</span>
+									</div>
+									<div class="raports-list__item">
+										<img src="./img/pdf-icon.svg" alt="">
+										<h4 class="raports-list__item-title">Raport_zadanie<br>testowe_2</h4>
+										<p class="raports-list__item-text">Przykładowy tekst pod <br>
+											headlinem w sekcji rapory</p>
+											<span class="report-list__item-label">Lorem ipsum</span>
+									</div>
+									<div class="raports-list__item">
+										<img src="./img/pdf-icon.svg" alt="">
+										<h4 class="raports-list__item-title">Raport_zadanie<br>testowe_3</h4>
+										<p class="raports-list__item-text">Przykładowy tekst pod <br>
+											headlinem w sekcji rapory</p>
+											<span class="report-list__item-label">Lorem ipsum</span>
+									</div>
+									<button class="reports-list__item-button button" type="button" data-href="#kontakt">Więcej</button>
+								</div>
+							</div> <!-- Koniec zakładki raporty -->
+
+							<!-- Zakładka z tabelą -->
+							<div id="tab2-content" class="analysis-content__item analysis-content__item--table">
+								<h3 class="analysis-content__item-title">Tabela</h3>
+								<div class="analysis-content__container">
+									<div>
+
+										<table id="analysis-table" class="analysis-table">
+										  <tr>
+										    <th scope="col">okres<br>rozliczeniowy</th>
+										    <th scope="col">przychody<br>ze sprzedaży</th>
+										    <th scope="col">zysk<br>operacyjny</th>
+										    <th scope="col">pliki<br>PDF</th>
+										  </tr>
+										  <tr>
+										    <td>2020</td>
+										    <td>48 770</td>
+										    <td>129</td>
+										    <td><a href="#" title="pobierz plik pdf"><img src="./img/pdf-icon.svg" alt="Plik pdf za rok 2020"></a></td>
+										  </tr>
+										  <tr>
+										    <td>2019</td>
+										    <td>38 622</td>
+										    <td>-8586</td>
+										    <td><a href="#" title="pobierz plik pdf"><img src="./img/pdf-icon.svg" alt="Plik pdf za rok 2019"></a></td>
+										  </tr>
+										  <tr>
+										    <td>2018</td>
+										    <td>39 687</td>
+										    <td>2616</td>
+										    <td><a href="#" title="pobierz plik pdf"><img src="./img/pdf-icon.svg" alt="Plik pdf za rok 2018"></a></td>
+										  </tr>
+										  <tr>
+										    <td>2017</td>
+										    <td>35 808</td>
+										    <td>5396</td>
+										    <td><a href="#" title="pobierz plik pdf"><img src="./img/pdf-icon.svg" alt="Plik pdf za rok 2017"></a></td>
+										  </tr>
+										  <tr>
+										    <td>2016</td>
+										    <td>30 904</td>
+										    <td>3329</td>
+										    <td><a href="#" title="pobierz plik pdf"><img src="./img/pdf-icon.svg" alt="Plik pdf za rok 2016"></a></td>
+										  </tr>
+										</table>
+
+										<p class="analysis-table__postscript">Wyniki skonsolidowane (w tys. PLN)</p>
+									</div>
+								</div>
+							</div> <!-- Koniec zakładki z tabelą -->
+
+							<!-- Zakładka z wykresem -->
+							<div id="tab3-content" class="analysis-content__item analysis-content__item--graph">
+								<h3 class="analysis-content__item-title">Wykres</h3>
+								<div class="analysis-content__container">
+
+									<div class="analysis-graph">
+										<div class="analysis-graph__legend-container">
+											<div class="analysis-graph__legend">
+												<span></span>
+												Zysk operacyjny (mln PLN)
+											</div>
+											<div class="analysis-graph__legend">
+												<span></span>
+												Przychody ze sprzedaży netto (mln PLN)
+											</div>
+										</div>
+										<div class="analysis-graph__wrapper">
+										  <div class="analysis-graph__holder">
+												<div class="analysis-graph__meassure analysis-graph__meassure--vertical">
+													<span class="analysis-graph__meassure-item"><span>50</span></span>
+													<span class="analysis-graph__meassure-item"><span>40</span></span>
+													<span class="analysis-graph__meassure-item"><span>30</span></span>
+													<span class="analysis-graph__meassure-item"><span>20</span></span>
+													<span class="analysis-graph__meassure-item"><span>10</span></span>
+												</div>
+												<div class="analysis-graph__bars-container">
+													<div class="analysis-graph__bars-wrapper" data-year="2016">
+													    <div
+													      class="analysis-graph__bar"
+													      data-percent="85%"> <!-- wartość zysku operacyjnego w roku 2016 -->
+													    </div>
+
+													    <div
+													      class="analysis-graph__bar"
+													      data-percent="75%"> <!-- wartość przychodów ze sprzedaży w roku 2016 -->
+													    </div>
+													</div>
+													<div class="analysis-graph__bars-wrapper" data-year="2017">
+													    <div
+													      class="analysis-graph__bar"
+													      data-percent="65%"> <!-- wartość zysku operacyjnego w roku 2017 -->
+													    </div>
+
+													    <div
+													      class="analysis-graph__bar"
+													      data-percent="90%"> <!-- wartość przychodów ze sprzedaży w roku 2017 -->
+													    </div>
+													</div>
+													<div class="analysis-graph__bars-wrapper" data-year="2018">
+													    <div
+													      class="analysis-graph__bar"
+													      data-percent="90%"> <!-- wartość zysku operacyjnego w roku 2018 -->
+													    </div>
+
+													    <div
+													      class="analysis-graph__bar"
+													      data-percent="80%"> <!-- wartość przychodów ze sprzedaży w roku 2018 -->
+													    </div>
+													</div>
+													<div class="analysis-graph__bars-wrapper" data-year="2019">
+													    <div
+													      class="analysis-graph__bar"
+													      data-percent="85%"> <!-- wartość zysku operacyjnego w roku 2019 -->
+													    </div>
+
+													    <div
+													      class="analysis-graph__bar"
+													      data-percent="-75%"> <!-- wartość przychodów ze sprzedaży w roku 2019 -->
+													    </div>
+													</div>
+													<div class="analysis-graph__bars-wrapper" data-year="2020">
+													    <div
+													      class="analysis-graph__bar"
+													      data-percent="80%"> <!-- wartość zysku operacyjnego w roku 2020 -->
+													    </div>
+
+													    <div
+													      class="analysis-graph__bar"
+													      data-percent="70%"> <!-- wartość przychodów ze sprzedaży w roku 2020 -->
+													    </div>
+													</div>
+												</div>
+												<div class="analysis-graph__meassure analysis-graph__meassure--horizontal">
+													<span class="analysis-graph__meassure-item"><span>2016</span></span>
+													<span class="analysis-graph__meassure-item"><span>2017</span></span>
+													<span class="analysis-graph__meassure-item"><span>2018</span></span>
+													<span class="analysis-graph__meassure-item"><span>2019</span></span>
+													<span class="analysis-graph__meassure-item"><span>2020</span></span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>	<!-- Koniec zakładki z wykresem -->
+
+						</div>	<!-- Koniec zawartości tabów -->
+
+					</section>
+					<section id="kontakt" class="main-content__section contact-section">
+						<header class="main-content__section-header contact-section__header">
+							<h2 class="main-content__section-title contact-section__title">Formularz kontaktowy</h2>
+						</header>
+
+						<div class="contact-section__container">
+
+							<div class="contact-section__col">
+								<h3 class="contact-section__col-title">Osoba do kontaktu</h3>
+								<p><strong>John Doe</strong><br>Konsultant</p>
+								<p>e-mail: john.doe@gmail.com</p>
+								<img class="contact-section__col-image" src="./img/contact-foto.jpg" alt="">
+							</div>
+
+							<div class="contact-section__col contact-section__col--form">
+								<form id="contact-form" class="contact-section__form" action="send.php" method="post">
+									<input class="contact-section__form-field" type="text" name="name" placeholder="Twoje imię i nazwisko" required>
+									<input class="contact-section__form-field" type="email" name="email" placeholder="Twój e-mail biznesowy" required>
+									<textarea class="contact-section__form-field" name="message" rows="8" cols="80" placeholder="Dzień dobry, chciałbym uzyskać więcej informacji. Proszę o kontakt." required></textarea>
+									<label class="form-checkbox">
+										<input type="checkbox" name="acceptance-rodo" required>
+										<span class="form-checkbox__checkmark"></span>
+										<span class="form-checkbox__text">Wyrażam zgodę na przetwarzanie moich danych osobowych w&nbsp;celach marketingowych. <a href="#">WIĘCEJ</a></span>
+									</label>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id nulla viverra
+										id ut condimentum. Malesuada sed mi volutpat nec elit magna. Sapien magna dictum turpis sit urna at velit mauris. Lorem ipsum dolor sit
+										amet, consectetur adipiscing elit. Id nulla viverra id ut condimentum.
+										Malesuada sed mi volutpat nec elit magna. Sapien magna dictum
+										turpis sit urna at velit mauris.<br><br></p>
+									<div>
+										<input id="submit-button" class="button" type="submit" value="Wyślij">
+									</div>
+									<span id="info-message" class="contact-section__form-info"></span>
+								</form>
+							</div>
+
+						</div>
+					</section>
+		</div>
+	</main>
+
+	<div id="cookiePolicy" class="cookie-policy">
+	  <div class="cookie-policy__container">
+		    <p class="cookie-policy__paragraph">
+		        Korzystając z naszej strony, wyrażasz zgodę na wykorzystywanie przez nas plików cookies.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id nulla viverra
+						id ut condimentum. Zaktualizowaliśmy naszą politykę przetwarzania danych osobowych
+				<a href="#" target="_blank">(RODO).</a> Więcej dowiesz się
+				<a href="#" target="_blank">tutaj</a>.
+		    </p>
+				<div class="">
+					<button id="cookiePolicy__close" type="button" class="button cookie-policy__close">Akceptuję</button>
+				</div>
+		</div>
+	</div>
+	<script src="./js/jquery-3.6.0.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
