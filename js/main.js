@@ -81,7 +81,7 @@ $(document).ready(function(){
   const tabButton = $('.analysis-tabs__button');
   const tabContent = $('.analysis-content__item');
 
-  tabButton.not(':first').addClass('inactive');
+  tabButton.not(':first').parent().addClass('inactive');
   tabContent.hide();
   tabContent.first().show();
 
@@ -101,9 +101,9 @@ $(document).ready(function(){
 
     let tabNumber = $(this).attr('id');
 
-    if($(this).hasClass('inactive')){
-      tabButton.addClass('inactive');
-      $(this).removeClass('inactive');
+    if($(this).parent().hasClass('inactive')){
+      tabButton.parent().addClass('inactive');
+      $(this).parent().removeClass('inactive');
 
       tabContent.hide();
       $('#'+ tabNumber + '-content').fadeIn('slow');
@@ -150,14 +150,14 @@ $(document).ready(function(){
 
   // Formularz
   // ID formularza
-  var submitForm = $('#contact-form');
+  const submitForm = $('#contact-form');
   // ID pola tekstowego z informacją
-  var infoMessage = $('#info-message');
-  var submitBtn = $('#submit-button');
+  const infoMessage = $('#info-message');
+  const submitBtn = $('#submit-button');
 
   submitForm.on('submit', function (e) {
     e.preventDefault();
-    var formData = $(this).serialize();
+    let formData = $(this).serialize();
     $.post("send.php", formData).fail(function (req) {
       console.log(req);
       infoMessage.addClass('contact-section__form-info--fail');
