@@ -311,23 +311,6 @@ img{
 .analysis-tabs__item{
   position: relative;
 }
-.analysis-tabs__item:nth-of-type(2).inactive::after,
-.analysis-tabs__item:nth-of-type(2).inactive::before{
-  content: "";
-  position: absolute;
-  display: block;
-  background-color: #D8D8D8;
-  width: 3px;
-  height: 122px;
-  top: 45px;
-  z-index: 2;
-}
-.analysis-tabs__item:nth-of-type(2).inactive::after{
-  left: 0;
-}
-.analysis-tabs__item:nth-of-type(2).inactive::before{
-  right: 0;
-}
 .analysis-tabs__button {
 	width: 243px;
 	height: 280px;
@@ -801,6 +784,23 @@ img{
   }
   .analysis-graph {
     max-width: 735px;
+  }
+  .analysis-tabs__item:nth-of-type(2).inactive::after,
+  .analysis-tabs__item:nth-of-type(2).inactive::before{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #D8D8D8;
+    width: 3px;
+    height: 122px;
+    top: 45px;
+    z-index: 2;
+  }
+  .analysis-tabs__item:nth-of-type(2).inactive::after{
+    left: 0;
+  }
+  .analysis-tabs__item:nth-of-type(2).inactive::before{
+    right: 0;
   }
   .contact-section__container{
     align-items: flex-start;
