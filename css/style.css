@@ -520,6 +520,7 @@ img{
 .contact-section__container{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin-bottom: 100px;
 }
@@ -777,6 +778,9 @@ img{
   }
   .analysis-graph {
     max-width: 735px;
+  }
+  .contact-section__container{
+    align-items: flex-start;
   }
 }
 @media only screen and (min-width: 1128px) {
