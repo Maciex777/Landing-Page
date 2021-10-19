@@ -75,6 +75,31 @@ $(document).ready(function(){
   });
 
 
+  // Pobieranie danych z pliku JSON
+  $.getJSON("analysis-table.json", function (data) {
+    var tableData = '';
+    // Iteracja przez obiekty
+    $.each(data, function (key, value) {
+      tableData += '<tr>';
+      tableData += '<td>' +
+        value.OkresRozliczeniowy + '</td>';
+
+      tableData += '<td>' +
+        value.PrzychodyZeSprzedazy + '</td>';
+
+      tableData += '<td>' +
+        value.ZyskOperacyjny + '</td>';
+
+      tableData += '<td>' +
+        value.PlikiPDF + '</td>';
+
+      tableData += '</tr>';
+    });
+
+    //Wstawianie wierszy do tabeli
+    $('#analysis-table').append(tableData);
+    getTableCells()
+  });
 
 
   // Taby
@@ -130,13 +155,17 @@ $(document).ready(function(){
 
   });
 
-  $('#analysis-table tr').not(':first').each(function() {
-    let firstCol = $(this).find("td:first").html();
-    let secondCol = $(this).find("td:nth-of-type(2)").html();
-    let thirdCol = $(this).find("td:nth-of-type(3)").html();
-    setChartBars(firstCol, secondCol, thirdCol);
-  });
+  // Pobieranie komórek tabeli
+  function getTableCells(){
+      $('#analysis-table tr').not(':first').each(function() {
+        let firstCol = $(this).find("td:first").html();
+        let secondCol = $(this).find("td:nth-of-type(2)").html();
+        let thirdCol = $(this).find("td:nth-of-type(3)").html();
+        setChartBars(firstCol, secondCol, thirdCol);
+      });
+  }
 
+  // Przeniesienie wartości z tabeli do wykresu
   function setChartBars(year, sales, profit){
     let currentBar = $('.analysis-graph__bars-wrapper[data-year="'+year+'"] div');
     // Usuwanie spacji i upewnianie się, że wartość jest liczbą
